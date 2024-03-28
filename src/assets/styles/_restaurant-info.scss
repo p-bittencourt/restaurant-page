@@ -1,0 +1,13 @@
+@use "./custom" as *;
+
+.restaurant-info {
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 20px;
+
+  p {
+    margin: 0;
+  }
+}

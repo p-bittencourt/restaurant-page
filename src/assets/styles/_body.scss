@@ -1,18 +1,22 @@
 @use "./custom" as *;
 
+/* html,
 body {
-  // background-image: url("/dist/30c3b4f429be9a482791.jpg");
-  // background-position: center;
-  //background-size: cover;
+  height: 100%;
+  position: relative;
+} */
+
+body {
+  position: static;
 
   &::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("/dist/30c3b4f429be9a482791.jpg");
+    background-image: url("/src/assets/imgs/5481373.jpg");
     opacity: 0.3;
     z-index: -1;
   }
@@ -32,8 +36,15 @@ footer {
   border-top: 3px solid $primary;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   a {
     color: $secondary;
+  }
+
+  @include media_breakpoint_down(md) {
+    display: none;
   }
 }

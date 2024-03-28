@@ -2,15 +2,16 @@ export function criarHome() {
   let body = document.createElement("div");
   body.classList.add("container", "text-center", "p-5");
 
-  let h1 = document.createElement("h1");
-  h1.textContent = "Nome do Restaurante";
-  body.appendChild(h1);
-
   let restaurantInfoDiv = document.createElement("div");
+  let h1 = document.createElement("h1");
+  h1.textContent = "Sabores do Dia";
+  restaurantInfoDiv.appendChild(h1);
   let p1 = document.createElement("p");
   p1.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ratione sint harum dolore sapiente nisi corrupti deleniti labore quisquam non.";
+    "Em 'Sabores do Dia', acreditamos que cada dia é uma nova oportunidade para saborear a vida. Começamos cedo, com opções de café da manhã que vão desde o simples e saboroso pão na chapa até opções mais elaboradas para começar o dia com o pé direito. Nosso almoço oferece pratos feitos com ingredientes frescos e locais, preparados com carinho e atenção aos detalhes. Venha nos visitar e descubra os sabores que cada dia tem a oferecer!";
   restaurantInfoDiv.appendChild(p1);
+  restaurantInfoDiv.classList.add("restaurant-info");
+  p1.classList.add("lead");
   body.appendChild(restaurantInfoDiv);
 
   let hoursDiv = document.createElement("div");
@@ -18,14 +19,12 @@ export function criarHome() {
   h2.textContent = "Horário de Funcionamento";
   hoursDiv.appendChild(h2);
   let p2 = document.createElement("p");
-  p2.textContent = "Terça - Sexta: 9am - 5pm";
+  p2.textContent = "Segunda - Sexta: 9am - 5pm";
   hoursDiv.appendChild(p2);
   let p3 = document.createElement("p");
   p3.textContent = "Sábado - Domingo: 10am - 3pm";
   hoursDiv.appendChild(p3);
-  let p4 = document.createElement("p");
-  p4.textContent = "Segunda: Fechado";
-  hoursDiv.appendChild(p4);
+  hoursDiv.classList.add("restaurant-info");
   body.appendChild(hoursDiv);
 
   let locationDiv = document.createElement("div");
@@ -44,6 +43,7 @@ export function criarHome() {
   let p8 = document.createElement("p");
   p8.textContent = "Telefone: (41) 99999-9999";
   locationDiv.appendChild(p8);
+  locationDiv.classList.add("restaurant-info");
   body.appendChild(locationDiv);
 
   return body;
