@@ -1,3 +1,5 @@
+@use "./custom" as *;
+
 body {
   // background-image: url("/dist/30c3b4f429be9a482791.jpg");
   // background-position: center;
@@ -17,4 +19,21 @@ body {
 }
 
 header {
+  background-color: $white;
+  width: 100vw;
+  height: 65px;
+  border-bottom: 3px solid $primary;
+}
+
+footer {
+  background-color: $white;
+  width: 100vw;
+  height: 55px;
+  border-top: 3px solid $primary;
+  position: absolute;
+  bottom: 0;
+
+  a {
+    color: $secondary;
+  }
 }
