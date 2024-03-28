@@ -22,27 +22,17 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "resolve-url-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
       {
-        test: /\.(png|jpe?g|gif|ico)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
           {
             loader: "file-loader",
             options: {
               name: "[path][name].[ext]",
-              publicPath: "dist",
+              outputPath: "assets/fonts/",
             },
           },
         ],

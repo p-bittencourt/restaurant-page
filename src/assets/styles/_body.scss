@@ -1,9 +1,20 @@
 body {
-  background-image: url("../images/5481373.jpg");
-  background-size: cover;
-  background-position: center;
+  // background-image: url("/dist/30c3b4f429be9a482791.jpg");
+  // background-position: center;
+  //background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/dist/30c3b4f429be9a482791.jpg");
+    opacity: 0.3;
+    z-index: -1;
+  }
 }
 
-h1 {
-  color: purple;
+header {
 }
