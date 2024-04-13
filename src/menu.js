@@ -17,26 +17,35 @@ export function criarMenu() {
   prato1Div.classList.add("prato");
 
   let img1 = document.createElement("img");
-  img1.classList.add("img-fluid");
+  img1.classList.add("img-fluid", "food-img");
   img1.src = "/src/assets/imgs/meals/cafe-pao-de-queijo.jpg";
   img1.alt = "Café com pão de queijo";
   prato1Div.appendChild(img1);
 
+  let prato1Header = document.createElement("h5");
+  prato1Header.textContent = "Café com pão de queijo - R$ 8,00";
+  prato1Div.appendChild(prato1Header);
+
   let p1 = document.createElement("p");
-  p1.textContent = "Prato 1: R$ 20,00";
+  p1.textContent = "Venha provar nosso delicioso café com pão de queijo!";
   prato1Div.appendChild(p1);
 
   let prato2Div = document.createElement("div");
   prato2Div.classList.add("prato");
 
   let img2 = document.createElement("img");
-  img2.classList.add("img-fluid");
+  img2.classList.add("img-fluid", "food-img");
   img2.src = "/src/assets/imgs/meals/sanduiche-com-suco.jpg";
   img2.alt = "Sanduíche com suco";
   prato2Div.appendChild(img2);
 
+  let prato2Header = document.createElement("h5");
+  prato2Header.textContent = "Sanduíche com suco - R$ 18,00";
+  prato2Div.appendChild(prato2Header);
+
   let p2 = document.createElement("p");
-  p2.textContent = "Prato 2: R$ 25,00";
+  p2.textContent =
+    "Experimente nosso sanduíche com suco de laranja fresquinho!";
   prato2Div.appendChild(p2);
 
   pratosCafe.appendChild(prato1Div);

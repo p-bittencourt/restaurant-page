@@ -19,11 +19,16 @@
       border-radius: 15px;
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
 
-      .img-fluid {
-        max-width: 300px;
-        max-height: 200px;
-        width: auto;
-        height: auto;
+      .food-img {
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      @include media_breakpoint_up(md) {
+        .food-img {
+          width: 300px;
+          height: 200px;
+        }
       }
     }
 
