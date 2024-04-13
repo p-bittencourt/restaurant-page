@@ -18,6 +18,13 @@
       margin: 5px;
       border-radius: 15px;
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+
+      .img-fluid {
+        max-width: 300px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+      }
     }
 
     @include media_breakpoint_down(md) {

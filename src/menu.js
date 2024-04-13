@@ -15,12 +15,26 @@ export function criarMenu() {
 
   let prato1Div = document.createElement("div");
   prato1Div.classList.add("prato");
+
+  let img1 = document.createElement("img");
+  img1.classList.add("img-fluid");
+  img1.src = "/src/assets/imgs/meals/cafe-pao-de-queijo.jpg";
+  img1.alt = "Café com pão de queijo";
+  prato1Div.appendChild(img1);
+
   let p1 = document.createElement("p");
   p1.textContent = "Prato 1: R$ 20,00";
   prato1Div.appendChild(p1);
 
   let prato2Div = document.createElement("div");
   prato2Div.classList.add("prato");
+
+  let img2 = document.createElement("img");
+  img2.classList.add("img-fluid");
+  img2.src = "/src/assets/imgs/meals/sanduiche-com-suco.jpg";
+  img2.alt = "Sanduíche com suco";
+  prato2Div.appendChild(img2);
+
   let p2 = document.createElement("p");
   p2.textContent = "Prato 2: R$ 25,00";
   prato2Div.appendChild(p2);
