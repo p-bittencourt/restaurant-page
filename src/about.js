@@ -1,3 +1,5 @@
+import aboutImg from "/src/assets/imgs/7794689.jpg";
+
 export function criarAbout() {
   const aboutContainer = document.createElement("div");
   aboutContainer.classList.add("container", "text-center", "p-5");
@@ -31,7 +33,7 @@ export function criarAbout() {
     "justify-content-end"
   );
   const photo = document.createElement("img");
-  photo.src = "/src/assets/imgs/7794689.jpg";
+  photo.src = aboutImg;
   photo.alt = "Quatro pessoas cozinhando";
   photo.classList.add("img-fluid", "about-image");
   const photoCredit = document.createElement("a");

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "npm run sass && webpack",
     "sass": "sass src/assets/styles/style.scss:dist/assets/styles/style.css",
     "watch": "webpack --watch",
-    "sass-watch": "sass --watch src/assets/styles/style.scss:dist/assets/styles/style.css"
+    "sass-watch": "sass --watch src/assets/styles/style.scss:dist/assets/styles/style.css",
+    "start": "http-server dist"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "http-server": "^14.1.1",
     "sass": "^1.72.0"
   }
 }

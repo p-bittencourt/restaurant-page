@@ -1,3 +1,12 @@
+// Imported images
+//#region
+import breakfast1 from "/src/assets/imgs/meals/cafe-pao-de-queijo.jpg";
+import breakfast2 from "/src/assets/imgs/meals/sanduiche-com-suco.jpg";
+import lunch1 from "/src/assets/imgs/meals/pf-bife.jpg";
+import lunch2 from "/src/assets/imgs/meals/strogonoff-frango.jpg";
+import happyHour1 from "/src/assets/imgs/meals/bolinho-carne-seca.jpg";
+import happyHour2 from "/src/assets/imgs/meals/fish-and-chips.jpg";
+//#endregion
 export function criarMenu() {
   let body = document.createElement("div");
   body.classList.add("container", "text-center", "p-5");
@@ -20,7 +29,7 @@ export function criarMenu() {
 
   let img1 = document.createElement("img");
   img1.classList.add("img-fluid", "food-img");
-  img1.src = "/src/assets/imgs/meals/cafe-pao-de-queijo.jpg";
+  img1.src = breakfast1;
   img1.alt = "Café com pão de queijo";
   prato1Div.appendChild(img1);
 
@@ -37,7 +46,7 @@ export function criarMenu() {
 
   let img2 = document.createElement("img");
   img2.classList.add("img-fluid", "food-img");
-  img2.src = "/src/assets/imgs/meals/sanduiche-com-suco.jpg";
+  img2.src = breakfast2;
   img2.alt = "Sanduíche com suco";
   prato2Div.appendChild(img2);
 
@@ -72,7 +81,7 @@ export function criarMenu() {
 
   let img3 = document.createElement("img");
   img3.classList.add("img-fluid", "food-img");
-  img3.src = "/src/assets/imgs/meals/pf-bife.jpg";
+  img3.src = lunch1;
   img3.alt = "Prato feito com bife";
   prato3Div.appendChild(img3);
 
@@ -89,7 +98,7 @@ export function criarMenu() {
 
   let img4 = document.createElement("img");
   img4.classList.add("img-fluid", "food-img");
-  img4.src = "/src/assets/imgs/meals/strogonoff-frango.jpg";
+  img4.src = lunch2;
   img4.alt = "Strogonoff de frango";
   prato4Div.appendChild(img4);
 
@@ -123,7 +132,7 @@ export function criarMenu() {
 
   let img5 = document.createElement("img");
   img5.classList.add("img-fluid", "food-img");
-  img5.src = "/src/assets/imgs/meals/bolinho-carne-seca.jpg";
+  img5.src = happyHour1;
   img5.alt = "Bolinho de carne seca";
   prato5Div.appendChild(img5);
 
@@ -140,7 +149,7 @@ export function criarMenu() {
 
   let img6 = document.createElement("img");
   img6.classList.add("img-fluid", "food-img");
-  img6.src = "/src/assets/imgs/meals/fish-and-chips.jpg";
+  img6.src = happyHour2;
   img6.alt = "Fish and chips";
   prato6Div.appendChild(img6);
 
