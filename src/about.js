@@ -8,7 +8,7 @@ export function criarAbout() {
   aboutInnerContainer.classList.add("restaurant-info");
   aboutContainer.appendChild(aboutInnerContainer);
   const aboutTitle = document.createElement("h2");
-  aboutTitle.textContent = "Sobre Nós";
+  aboutTitle.textContent = "About Us";
   aboutInnerContainer.appendChild(aboutTitle);
 
   const infoContainer = document.createElement("div");
@@ -20,7 +20,7 @@ export function criarAbout() {
   const aboutParagraph = document.createElement("p");
   aboutParagraph.classList.add("lead", "p-3", "mt-4");
   aboutParagraph.textContent =
-    "O 'Sabores do Dia' é mais do que apenas um restaurante, é a realização de um sonho compartilhado por quatro amigos apaixonados por culinária. Cada prato servido é o resultado de anos de experiência, experimentação e, acima de tudo, uma profunda paixão por compartilhar a alegria da comida bem feita. Nossos amigos, agora chefs, trazem suas habilidades únicas e estilos culinários distintos para criar um menu diversificado e delicioso. Cada refeição é preparada com amor e dedicação, refletindo a amizade e camaradagem que formam a base do 'Sabores do Dia'. Venha experimentar a hospitalidade calorosa e a comida deliciosa que tornam o nosso restaurante um lugar especial.";
+    "Come try our homemade Brazilian food. 'Flavors of the Day' is more than just a restaurant, it's the realization of a shared dream by four friends who are passionate about cooking. Each dish served is the result of years of experience, experimentation, and above all, a deep passion for sharing the joy of well-made food. Our friends, now chefs, bring their unique skills and distinct culinary styles to create a diverse and delicious menu, infused with the rich flavors and traditions of Brazilian cuisine. Each meal is prepared with love and dedication, reflecting the friendship and camaraderie that form the foundation of 'Flavors of the Day'. Come experience the warm hospitality and delicious food that make our restaurant a special place.";
   aboutContent.appendChild(aboutParagraph);
   infoContainer.appendChild(aboutContent);
 

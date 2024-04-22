@@ -18,7 +18,7 @@ export function criarMenu() {
   let breakfastDiv = document.createElement("div");
   breakfastDiv.classList.add("meal");
   let breakfastHeader = document.createElement("h2");
-  breakfastHeader.textContent = "Café da manhã";
+  breakfastHeader.textContent = "Breakfast";
   breakfastDiv.appendChild(breakfastHeader);
 
   let pratosCafe = document.createElement("div");
@@ -30,15 +30,15 @@ export function criarMenu() {
   let img1 = document.createElement("img");
   img1.classList.add("img-fluid", "food-img");
   img1.src = breakfast1;
-  img1.alt = "Café com pão de queijo";
+  img1.alt = "Coffee and traditional brazilian cheese bread";
   prato1Div.appendChild(img1);
 
   let prato1Header = document.createElement("h5");
-  prato1Header.textContent = "Café com pão de queijo - R$ 8,00";
+  prato1Header.textContent = "Coffee and Cheese Bread - $ 8";
   prato1Div.appendChild(prato1Header);
 
   let p1 = document.createElement("p");
-  p1.textContent = "Venha provar nosso delicioso café com pão de queijo!";
+  p1.textContent = "Come try our traditional brazilian cheese bread!";
   prato1Div.appendChild(p1);
 
   let prato2Div = document.createElement("div");
@@ -47,16 +47,15 @@ export function criarMenu() {
   let img2 = document.createElement("img");
   img2.classList.add("img-fluid", "food-img");
   img2.src = breakfast2;
-  img2.alt = "Sanduíche com suco";
+  img2.alt = "Sandwich and juice";
   prato2Div.appendChild(img2);
 
   let prato2Header = document.createElement("h5");
-  prato2Header.textContent = "Sanduíche com suco - R$ 18,00";
+  prato2Header.textContent = "Sandwich and Fresh Juice - $ 12";
   prato2Div.appendChild(prato2Header);
 
   let p2 = document.createElement("p");
-  p2.textContent =
-    "Experimente nosso sanduíche com suco de laranja fresquinho!";
+  p2.textContent = "Try our sandwich and some freshly squeezed juice!";
   prato2Div.appendChild(p2);
 
   pratosCafe.appendChild(prato1Div);
@@ -70,7 +69,7 @@ export function criarMenu() {
   let lunchDiv = document.createElement("div");
   lunchDiv.classList.add("meal");
   let lunchHeader = document.createElement("h2");
-  lunchHeader.textContent = "Almoço";
+  lunchHeader.textContent = "Lunch";
   lunchDiv.appendChild(lunchHeader);
 
   let pratosAlmoco = document.createElement("div");
@@ -82,15 +81,16 @@ export function criarMenu() {
   let img3 = document.createElement("img");
   img3.classList.add("img-fluid", "food-img");
   img3.src = lunch1;
-  img3.alt = "Prato feito com bife";
+  img3.alt = "Classical Brazilian Lunch";
   prato3Div.appendChild(img3);
 
   let prato3Header = document.createElement("h5");
-  prato3Header.textContent = "Prato feito com bife - R$ 25,00";
+  prato3Header.textContent = "Brazilian Meal with Steak - $ 20";
   prato3Div.appendChild(prato3Header);
 
   let p3 = document.createElement("p");
-  p3.textContent = "Um clássico prato feito com bife, arroz, feijão e salada!";
+  p3.textContent =
+    "Classical Brazilian lunch with rice, beans, fries, salad and a tasty steak!";
   prato3Div.appendChild(p3);
 
   let prato4Div = document.createElement("div");
@@ -99,15 +99,16 @@ export function criarMenu() {
   let img4 = document.createElement("img");
   img4.classList.add("img-fluid", "food-img");
   img4.src = lunch2;
-  img4.alt = "Strogonoff de frango";
+  img4.alt = "Chicken Strogonoff";
   prato4Div.appendChild(img4);
 
   let prato4Header = document.createElement("h5");
-  prato4Header.textContent = "Strogonoff de frango - R$ 23,00";
+  prato4Header.textContent = "Chicken Strogonoff - $ 20";
   prato4Div.appendChild(prato4Header);
 
   let p4 = document.createElement("p");
-  p4.textContent = "Um especial strogonoff de frango com arroz e batata palha!";
+  p4.textContent =
+    "A Brazilian take on a classical european dish, the Strogonoff.";
   prato4Div.appendChild(p4);
 
   pratosAlmoco.appendChild(prato3Div);
@@ -133,15 +134,15 @@ export function criarMenu() {
   let img5 = document.createElement("img");
   img5.classList.add("img-fluid", "food-img");
   img5.src = happyHour1;
-  img5.alt = "Bolinho de carne seca";
+  img5.alt = "Jerk Beef Dumpling";
   prato5Div.appendChild(img5);
 
   let prato5Header = document.createElement("h5");
-  prato5Header.textContent = "Bolinho de carne seca - R$ 38,00";
+  prato5Header.textContent = "Jerk Beef Dumpling - $ 25";
   prato5Div.appendChild(prato5Header);
 
   let p5 = document.createElement("p");
-  p5.textContent = "Não deixe de provar nosso delicioso bolinho de carne seca!";
+  p5.textContent = "Don't forget to try our special Jerk Beef Dumpling!";
   prato5Div.appendChild(p5);
 
   let prato6Div = document.createElement("div");
@@ -154,11 +155,11 @@ export function criarMenu() {
   prato6Div.appendChild(img6);
 
   let prato6Header = document.createElement("h5");
-  prato6Header.textContent = "Fish and chips - R$ 40,00";
+  prato6Header.textContent = "Fish and chips - $29";
   prato6Div.appendChild(prato6Header);
 
   let p6 = document.createElement("p");
-  p6.textContent = "Experimente nosso fish and chips com uma cerveja gelada!";
+  p6.textContent = "Our Fish and Chips match well with a nice cold beer!";
   prato6Div.appendChild(p6);
 
   pratosHappyHour.appendChild(prato5Div);
